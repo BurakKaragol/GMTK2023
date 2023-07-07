@@ -23,7 +23,5 @@ namespace MrLule.Systems.SaveSystem
         {
 
         }
-
-        public Vector3 pozisyon;
     }
 }

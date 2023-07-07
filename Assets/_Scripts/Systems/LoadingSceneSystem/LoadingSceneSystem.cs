@@ -44,7 +44,7 @@ public class LoadingSceneSystem : MonoBehaviour
         }
         else
         {
-            backgroundImage.color = new Color(0.1960784f, 0.1960784f, 0.1960784f);
+            //backgroundImage.color = new Color(0.1960784f, 0.1960784f, 0.1960784f);
         }
         lastTipChangeTime = Time.time;
         lastBackgroundChangeTime = Time.time;
