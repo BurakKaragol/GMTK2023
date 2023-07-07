@@ -6,7 +6,7 @@ using MrLule.Managers.CameraMan;
 using MrLule.Managers.CheckpointMan;
 using MrLule.Managers.CursorMan;
 using MrLule.Managers.DamagePopupMan;
-using MrLule.Managers.DialogueMan;
+//using MrLule.Managers.DialogueMan;
 using MrLule.Managers.DifficultyMan;
 using MrLule.Managers.GameMan;
 using MrLule.Managers.InputMan;
@@ -74,12 +74,12 @@ namespace MrLule.Managers
         }
         private static DamagePopupManager _damagePopupManager;
 
-        public static DialogueManager dialogueManager
-        {
-            get => _dialogueManager == null ? _dialogueManager = FindObjectOfType<DialogueManager>() : _dialogueManager;
-            set => _dialogueManager = value;
-        }
-        private static DialogueManager _dialogueManager;
+        //public static DialogueManager dialogueManager
+        //{
+        //    get => _dialogueManager == null ? _dialogueManager = FindObjectOfType<DialogueManager>() : _dialogueManager;
+        //    set => _dialogueManager = value;
+        //}
+        //private static DialogueManager _dialogueManager;
 
         public static DifficultyManager difficultyManager
         {
