@@ -1,0 +1,640 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LanguageTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 8b2b526db74cc574bb03023c8df7aa67, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 7556657994891526148
+  m_TableData:
+  - m_Id: 81585857478393856
+    m_Localized: Windowed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585856958300160
+    m_Localized: Fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585856513703936
+    m_Localized: Video
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585855968444416
+    m_Localized: Follow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585855456739328
+    m_Localized: Follow Us
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585854982782976
+    m_Localized: Social Media
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585854496243712
+    m_Localized: Programmer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585853997121536
+    m_Localized: Sound Designer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81583627471814656
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585720752472064
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585828734828544
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585833260482560
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585836091637760
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585840835395584
+    m_Localized: Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585844459274240
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585847269457920
+    m_Localized: General
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585849203032064
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585850998194176
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585851463761920
+    m_Localized: Sound Effects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585851979661312
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585852470394880
+    m_Localized: Game Developer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585852994682880
+    m_Localized: Game Designer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585853527359488
+    m_Localized: Graphics Designer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585857943961600
+    m_Localized: Graphics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585858480832512
+    m_Localized: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585859013509120
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585859504242688
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585859990781952
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585860464738304
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585860980637696
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585861492342784
+    m_Localized: Reload
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585861991464960
+    m_Localized: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585862515752960
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585863052623872
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585863606272000
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585864088616960
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585864650653696
+    m_Localized: Apply
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585865204301824
+    m_Localized: Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585865720201216
+    m_Localized: Load
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585866244489216
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585866785554432
+    m_Localized: Empty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585867347591168
+    m_Localized: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585867951570944
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585868375195648
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585868933038080
+    m_Localized: Accept
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81585869553795072
+    m_Localized: Decline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81586956679643136
+    m_Localized: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81586957237485568
+    m_Localized: Select
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81586957719830528
+    m_Localized: Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81586958239924224
+    m_Localized: Game Over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593589644263424
+    m_Localized: Saved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593587031212032
+    m_Localized: Game Saved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593586444009472
+    m_Localized: Well Done
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593585911332864
+    m_Localized: Congratulations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593585445765120
+    m_Localized: Report Bug
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593585114415104
+    m_Localized: Report
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593585089249280
+    m_Localized: Help
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593583805792256
+    m_Localized: Sorry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593583239561216
+    m_Localized: Thank You
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593582681718784
+    m_Localized: Goodbye
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593582144847872
+    m_Localized: Hello
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593581570228224
+    m_Localized: Drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593581083688960
+    m_Localized: Destruct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593580521652224
+    m_Localized: Build
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593579959615488
+    m_Localized: Unequip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593579447910400
+    m_Localized: Equip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593578877485056
+    m_Localized: Reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593577417867264
+    m_Localized: Upgrade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593576931328000
+    m_Localized: Lock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593576386068480
+    m_Localized: Unlock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593575845003264
+    m_Localized: Collect
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593575303938048
+    m_Localized: Use
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593574733512704
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593574184058880
+    m_Localized: Open
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593573659770880
+    m_Localized: Inspect
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593573122899968
+    m_Localized: Interact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593572569251840
+    m_Localized: Walk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593572070129664
+    m_Localized: Run
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593571512287232
+    m_Localized: Defend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593570996387840
+    m_Localized: Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593570505654272
+    m_Localized: Jump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593570031697920
+    m_Localized: Saved Succesfully
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593568962150400
+    m_Localized: Are You Sure?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593568446251008
+    m_Localized: Please Wait
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593567921963008
+    m_Localized: No Internet Connection!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593567401869312
+    m_Localized: Connection Lost!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593566877581312
+    m_Localized: Waiting...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593560183472128
+    m_Localized: Saving...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593557541060608
+    m_Localized: Loading...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593554705711104
+    m_Localized: Warning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593551895527424
+    m_Localized: Error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593548724633600
+    m_Localized: Defeat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593545583099904
+    m_Localized: Victory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593542672252928
+    m_Localized: Mission Failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81593539853680640
+    m_Localized: Level Complete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82206111216828416
+    m_Localized: User Experience Designer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82206113167179776
+    m_Localized: Technical Designer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82206132909768704
+    m_Localized: Gameplay Designer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82206134637821952
+    m_Localized: Systems Designer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82206139205419008
+    m_Localized: Open World Designer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82206668014878720
+    m_Localized: Quest Designer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82206670476935168
+    m_Localized: Economy Designer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82206673769463808
+    m_Localized: Narrative Designer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84979412846641152
+    m_Localized: How To Play?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84979672843157504
+    m_Localized: Statistics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84988596975697920
+    m_Localized: Create
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84988671781109760
+    m_Localized: New Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84989854780358656
+    m_Localized: Delete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85650127946121216
+    m_Localized: 'Understand mechanics: Learn the basic game mechanics for an advantage.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85650129598676992
+    m_Localized: 'Improve your skills: Practice to enhance your abilities.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85650131054100480
+    m_Localized: 'Learn from experience: Watch skilled players and learn their strategies.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85650132350140416
+    m_Localized: 'Set achievable goals: Set realistic goals to stay motivated.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85650133801369600
+    m_Localized: 'Stay calm and focused: Keep calm and stay focused on the game.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85650135164518400
+    m_Localized: 'Collaborate with others: Communicate and work as a team.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85650136624136192
+    m_Localized: 'Study the meta: Learn current strategies and popular builds.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85650138079559680
+    m_Localized: 'Customize controls: Adjust controls to your preferences.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85650139497234432
+    m_Localized: 'Take breaks, avoid burnout: Take regular breaks to avoid fatigue.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85650141007183872
+    m_Localized: 'Remember to have fun: Enjoy the game and have fun.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85745086518919168
+    m_Localized: "  Hi, thanks for playing :)\n  I hope you like my work\n  If you
+      want to take a look at the other games i made. Feel free to take a look at
+      my itch.io page.\n  I am open to freelance jobs. For more info please contact
+      me from the links below."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85747226326990848
+    m_Localized: "> CONTRIBUTORS <\n\nMrLule - Burak Karag\xF6l\nGame Developer\n\n>
+      ASSETS USED IN THE GAME <\n\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86110832029728768
+    m_Localized: Display Mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86111065711181824
+    m_Localized: Graphics Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86111265452326912
+    m_Localized: Anti Aliasing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86111364739891200
+    m_Localized: Texture Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86111520436649984
+    m_Localized: Shadow Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86111643342340096
+    m_Localized: VSync
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86111834959118336
+    m_Localized: Borderless Window
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86112132956028928
+    m_Localized: Off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86112187758804992
+    m_Localized: On
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86112282038370304
+    m_Localized: Low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86112402981126144
+    m_Localized: Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86112452020928512
+    m_Localized: High
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86112485311119360
+    m_Localized: Ultra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86112873800138752
+    m_Localized: resolution_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86112926610620416
+    m_Localized: display_mode_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86113112762220544
+    m_Localized: graphics_quality_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86113225840656384
+    m_Localized: anti_aliasing_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86113285517213696
+    m_Localized: texture_quality_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86113336977129472
+    m_Localized: shadow_quality_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86113405222649856
+    m_Localized: v_sync_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86685539976216576
+    m_Localized: Very High
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86685465485377536
+    m_Localized: Lowest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86685705969991680
+    m_Localized: Epic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86717965167362048
+    m_Localized: None
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86717968329867264
+    m_Localized: Fast Approximate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86717971274268672
+    m_Localized: Subpixel Morphological
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86719552677871616
+    m_Localized: Temporal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87004295575240704
+    m_Localized: Disabled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87004340450099200
+    m_Localized: Hard Only
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87008166234161152
+    m_Localized: Enabled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87004379805253632
+    m_Localized: All
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87007963808661504
+    m_Localized: Adaptive
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 7556657994891526148
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0000f2f793b82a01

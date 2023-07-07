@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &578926195846247285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 578926195846247284}
+  - component: {fileID: 578926195846247242}
+  - component: {fileID: 578926195846247243}
+  - component: {fileID: 578926195846247240}
+  - component: {fileID: 578926195846247241}
+  - component: {fileID: 578926195846247286}
+  - component: {fileID: 578926195846247287}
+  m_Layer: 0
+  m_Name: SettingsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &578926195846247284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578926195846247285}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &578926195846247242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578926195846247285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45eb017c95dbf2c4abd5e32da2bc3779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundMuteButton: {fileID: 0}
+  soundSlider: {fileID: 0}
+  musicMuteButton: {fileID: 0}
+  musicSlider: {fileID: 0}
+--- !u!114 &578926195846247243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578926195846247285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc9d290eca35e44f905c37fd5fd911e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficultyDropdown: {fileID: 0}
+  difficulties:
+  - name: Easiest
+    difficulty: 0
+  - name: Easy
+    difficulty: 1
+  - name: Normal
+    difficulty: 2
+  - name: Hard
+    difficulty: 3
+  - name: Hardest
+    difficulty: 4
+--- !u!114 &578926195846247240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578926195846247285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0598fb45f2105f4ea1fa2bec03e9dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullscreenCheckbox: {fileID: 0}
+--- !u!114 &578926195846247241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578926195846247285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14ba3eb21981d984ea5ebd9067607ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  languageDropdown: {fileID: 0}
+  languages:
+  - name: English
+    language: {fileID: 11400000, guid: 78b019dc8a706f7458b19ebd05574e93, type: 2}
+  - name: "T\xFCrk\xE7e"
+    language: {fileID: 11400000, guid: ccf0aab3525479147a2a2035dfc8eddb, type: 2}
+  languageSetting: {fileID: 11400000, guid: bf5109e8a369de94781d38e7d717cdc2, type: 2}
+--- !u!114 &578926195846247286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578926195846247285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f377419b4e86e324381025be04c5cc28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolutionDropdown: {fileID: 0}
+--- !u!114 &578926195846247287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578926195846247285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e256e0fb41c61d4b898aa1bb00aa596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vSyncCheckbox: {fileID: 0}

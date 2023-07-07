@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-playstation (playstation)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-playstation (playstation)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7b233543d1a2ccc4ab429c2ebd385c71
+  m_SerializeEntries:
+  - m_GUID: f4f461c40c0c1894ca0691f8c0f87582
+    m_Address: 0_Key_Light
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-playstation
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: cddbd2deb3f8ab8479a6725aee76ce1b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3df9001abd9ae664199005c7baa79716, type: 2}
+    - {fileID: 11400000, guid: eb41e861ffa3c2c4199fafa3139b98ac, type: 2}

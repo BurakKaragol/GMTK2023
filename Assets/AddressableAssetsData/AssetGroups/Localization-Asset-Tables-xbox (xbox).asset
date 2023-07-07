@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Asset-Tables-xbox (xbox)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Asset-Tables-xbox (xbox)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b8106d5b9af6ad5489aa222c0b8bb4ef
+  m_SerializeEntries: []
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: cddbd2deb3f8ab8479a6725aee76ce1b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: db804db762c6f3347add4fa3a0ca9658, type: 2}
+    - {fileID: 11400000, guid: 5087a7e3557e87146a0a929cc9bff481, type: 2}
