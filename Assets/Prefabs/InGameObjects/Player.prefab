@@ -136,7 +136,7 @@ MonoBehaviour:
   holdButtonImage: {fileID: 2501117395580749244}
   holdWaitTime: 0.5
   lastBoundTransform: {fileID: 0}
-  maximumDistanceFromLastTransform: 5
+  maximumDistanceFromLastTransform: 6
   notOnInventoryImage: {fileID: 8912663575610916043}
   notOnInventoryShowTime: 2.5
   inventory: []
@@ -230,7 +230,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.5}
   serializedVersion: 2
   m_Radius: 0.5
 --- !u!95 &5344007956394424169
