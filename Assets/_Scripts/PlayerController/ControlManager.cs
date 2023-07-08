@@ -35,6 +35,8 @@ public class ControlManager : MonoBehaviour
     private bool hasControlableInArea = false;
     private Controller controllableInArea = null;
     private InventoryVisualizer inventoryVisualizer;
+    public float xAxis;
+    public float yAxis;
 
     private void Start()
     {
@@ -51,8 +53,8 @@ public class ControlManager : MonoBehaviour
             return;
         }
 
-        float xAxis = Input.GetAxisRaw("Horizontal");
-        float yAxis = Input.GetAxisRaw("Vertical");
+        xAxis = Input.GetAxisRaw("Horizontal");
+        yAxis = Input.GetAxisRaw("Vertical");
         if (activeController != null)
         {
             lineRenderer.enabled = false;
@@ -222,5 +224,11 @@ public class ControlManager : MonoBehaviour
         {
             Gizmos.DrawWireSphere(lastBoundTransform.position, maximumDistanceFromLastTransform);
         }
+    }
+
+    private void OnDestroy()
+    {
+        DOTween.CompleteAll();
+        DOTween.Clear();
     }
 }

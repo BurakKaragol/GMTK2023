@@ -36,6 +36,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 845839563, guid: 89432e3f62e5e8349abf9b11e008b402, type: 3}
+    - target: {fileID: 3530496204748967270, guid: 9ee362f82288d164cabf3d8a32ff747f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3814660445074837812, guid: 9ee362f82288d164cabf3d8a32ff747f, type: 3}
       propertyPath: m_RootOrder
       value: 0

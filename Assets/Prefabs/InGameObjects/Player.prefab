@@ -146,6 +146,8 @@ MonoBehaviour:
   holdingControl: 1
   holdStartTime: 0
   playerInWorkArea: 0
+  xAxis: 0
+  yAxis: 0
 --- !u!212 &884493736288536029
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -186,7 +188,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 50
   m_Sprite: {fileID: -254704586, guid: 570b69a58996dc84ba63ff2e5b9a81c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

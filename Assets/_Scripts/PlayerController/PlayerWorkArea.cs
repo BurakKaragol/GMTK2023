@@ -9,7 +9,7 @@ public class PlayerWorkArea : MonoBehaviour
     [SerializeField] private string objectToAdd = "Elma";
     [SerializeField] private int maximumObjectCount = 1;
     [SerializeField] private CanvasGroup requestedNPCImg;
-    [SerializeField] private Image onAreaInteractableImage;
+    [SerializeField] private CanvasGroup onAreaInteractableImage;
     [SerializeField] private float interactableButtonDuration = 0.5f;
     [SerializeField] private Ease interactableButtonEase = Ease.OutCubic;
     [SerializeField] private Image fillImage;
@@ -59,6 +59,8 @@ public class PlayerWorkArea : MonoBehaviour
             {
                 holdingKey = true;
                 player.isWorking = true;
+                player.xAxis = 0;
+                player.yAxis = 0;
                 holdStartTime = Time.time;
             }
         }
