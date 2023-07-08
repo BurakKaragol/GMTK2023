@@ -78,13 +78,11 @@ public class Controller : MonoBehaviour
         }
         if (state)
         {
-            Debug.Log("Cikti Aktif");
             npcShowDialogue.enabled = true;
             npcShowDialogue.ShowDialogueBox();
         }
         else
         {
-            Debug.Log("Dolu Deaktif");
             npcShowDialogue.HideDialogueBox();
             npcShowDialogue.enabled = false;
         }
