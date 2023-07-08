@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1472991449098738243, guid: d4459a1fd8f0fab4d869c13b935e8701, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1792093341843960255, guid: d4459a1fd8f0fab4d869c13b935e8701, type: 3}
       propertyPath: m_Name
       value: TilkiNPC
