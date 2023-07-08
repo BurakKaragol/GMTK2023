@@ -6,6 +6,7 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     [SerializeField] public string requestedItemName;
+    [SerializeField] public string NPCName = "Kedi";
     [SerializeField] private float movementSpeed = 600f;
     [SerializeField] private float jumpForce = 300f;
     [SerializeField] private float jumpGravity = 1f;

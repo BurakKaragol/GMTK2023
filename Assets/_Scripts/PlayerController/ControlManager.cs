@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class ControlManager : MonoBehaviour
 {
-    [SerializeField] private Controller activeController;
+    [SerializeField] public Controller activeController;
     [SerializeField] private float roleChangeMoveSpeed = 0.2f;
     [SerializeField] private float roleChangeDetectionDistance = 2f;
     [SerializeField] private LayerMask whatIsChangeable;

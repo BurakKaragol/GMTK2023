@@ -5,8 +5,10 @@ using UnityEngine.UI;
 public class PlayerWorkArea : MonoBehaviour
 {
     [SerializeField] private string playerTag = "Player";
+    [SerializeField] private string allowedNPCName = "Kedi";
     [SerializeField] private string objectToAdd = "Elma";
     [SerializeField] private int maximumObjectCount = 1;
+    [SerializeField] private Image requestedNPCImg;
     [SerializeField] private Image onAreaInteractableImage;
     [SerializeField] private float interactableButtonDuration = 0.5f;
     [SerializeField] private Ease interactableButtonEase = Ease.OutCubic;
@@ -84,6 +86,12 @@ public class PlayerWorkArea : MonoBehaviour
             {
                 return;
             }
+            if (player.activeController.NPCName != allowedNPCName)
+            {
+                requestedNPCImg.DOFade(1f, interactableButtonDuration).SetEase(interactableButtonEase);
+                requestedNPCImg.transform.DOLocalMoveY(1f, interactableButtonDuration).SetEase(interactableButtonEase);
+                return;
+            }
             playerOnArea = true;
             player.playerInWorkArea = true;
             onAreaInteractableImage.DOFade(1f, interactableButtonDuration).SetEase(interactableButtonEase);
@@ -93,6 +101,8 @@ public class PlayerWorkArea : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        requestedNPCImg.DOFade(0f, interactableButtonDuration).SetEase(interactableButtonEase);
+        requestedNPCImg.transform.DOLocalMoveY(0f, interactableButtonDuration).SetEase(interactableButtonEase);
         if (!playerOnArea)
         {
             return;
