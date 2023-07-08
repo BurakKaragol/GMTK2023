@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
+    [SerializeField] public string requestedItemName;
     [SerializeField] private float movementSpeed = 600f;
     [SerializeField] private float jumpForce = 300f;
     [SerializeField] private float jumpGravity = 1f;
@@ -18,6 +19,7 @@ public class Controller : MonoBehaviour
     [ShowOnly] public float movementX;
     [ShowOnly] public bool isJumpInput;
     [ShowOnly] public bool isFacingRight = true;
+    [ShowOnly] public bool isRequirementSatisfied = false;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -35,6 +37,11 @@ public class Controller : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!isRequirementSatisfied)
+        {
+            return;
+        }
+
         rb.AddForce(new Vector2(movementX * movementSpeed * Time.fixedDeltaTime, 0));
         if (isFacingRight && rb.velocity.x < 0)
         {
@@ -68,6 +75,11 @@ public class Controller : MonoBehaviour
         {
             jumped = false;
         }
+    }
+
+    public void CompleteRequirement()
+    {
+        isRequirementSatisfied = true;
     }
 
     public void SetDialogueBoxState(bool state)
