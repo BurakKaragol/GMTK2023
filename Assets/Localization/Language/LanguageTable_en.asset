@@ -631,6 +631,13 @@ MonoBehaviour:
     m_Localized: Adaptive
     m_Metadata:
       m_Items: []
+  - m_Id: 90282388645609472
+    m_Localized: "  Hi, thanks for playing :)\n  I hope you like my work\n  If you
+      want to take a look at the other games i made. Feel free to take a look at
+      my itch.io page.\n  I am open to freelance jobs. For more info please contact
+      me from the links below."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

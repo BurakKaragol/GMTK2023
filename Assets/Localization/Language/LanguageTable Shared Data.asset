@@ -488,7 +488,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 85745086518919168
-    m_Key: welcomer_text
+    m_Key: welcomer_text_mrlule
     m_Metadata:
       m_Items: []
   - m_Id: 85747226326990848
@@ -623,6 +623,10 @@ MonoBehaviour:
     m_Key: enabled
     m_Metadata:
       m_Items: []
+  - m_Id: 90282388645609472
+    m_Key: welcomer_text_psygin
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -631,7 +635,6 @@ MonoBehaviour:
     version: 2
     RefIds:
     - rid: 2872298236738797622
-      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
-        asm: Unity.Localization}
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
         m_CustomEpoch: 1667293308412
