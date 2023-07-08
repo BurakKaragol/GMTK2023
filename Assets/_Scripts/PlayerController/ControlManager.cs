@@ -19,7 +19,7 @@ public class ControlManager : MonoBehaviour
     [SerializeField] private float maximumDistanceFromLastTransform = 10f;
     [SerializeField] private Image notOnInventoryImage;
     [SerializeField] private float notOnInventoryShowTime = 3f;
-    [ShowOnly] public List<string> inventory = new List<string>();
+    /*[ShowOnly] */public List<string> inventory = new List<string>();
 
     public bool isRoleChangeMode = false;
     public bool isWorking = false;
