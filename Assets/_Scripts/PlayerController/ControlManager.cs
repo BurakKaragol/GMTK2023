@@ -218,6 +218,9 @@ public class ControlManager : MonoBehaviour
         Gizmos.color = hasControlableInArea ? Color.green : Color.red;
         Gizmos.DrawWireSphere(transform.position, roleChangeDetectionDistance);
         Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(lastBoundTransform.position, maximumDistanceFromLastTransform);
+        if (lastBoundTransform != null)
+        {
+            Gizmos.DrawWireSphere(lastBoundTransform.position, maximumDistanceFromLastTransform);
+        }
     }
 }
