@@ -2,6 +2,7 @@ using MrLule.Attributes;
 using MrLule.ExtensionMethods;
 using MrLule.General;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Controller : MonoBehaviour
 {
@@ -15,7 +16,10 @@ public class Controller : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private Transform dialogueBox;
+    [SerializeField] public Transform boundPosition;
     [SerializeField] private NPCShowDialogue npcShowDialogue;
+    [SerializeField] private Sprite completedSprite;
+    [SerializeField] private Image completedButtonImage;
 
     [ShowOnly] public float movementX;
     [ShowOnly] public bool isJumpInput;
@@ -80,6 +84,7 @@ public class Controller : MonoBehaviour
 
     public void CompleteRequirement()
     {
+        completedButtonImage.sprite = completedSprite;
         isRequirementSatisfied = true;
     }
 

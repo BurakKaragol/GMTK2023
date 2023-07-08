@@ -31,6 +31,7 @@ public class ControlManager : MonoBehaviour
 
     private LineRenderer lineRenderer;
     private Collider2D collider;
+    private SpriteRenderer playerImg;
     private bool hasControlableInArea = false;
     private Controller controllableInArea = null;
     private InventoryVisualizer inventoryVisualizer;
@@ -39,6 +40,7 @@ public class ControlManager : MonoBehaviour
     {
         lineRenderer = GetComponent<LineRenderer>();
         collider = GetComponent<Collider2D>();
+        playerImg = GetComponent<SpriteRenderer>();
         inventoryVisualizer = FindObjectOfType<InventoryVisualizer>();
     }
 
@@ -58,6 +60,7 @@ public class ControlManager : MonoBehaviour
             isRoleChangeMode = false;
             controllableInArea = null;
             collider.isTrigger = true;
+            playerImg.enabled = false;
             transform.position = activeController.transform.position;
             activeController.movementX = xAxis;
             activeController.isJumpInput = Input.GetAxis("Jump") > 0;
@@ -81,7 +84,9 @@ public class ControlManager : MonoBehaviour
                     holdingControl = false;
                     holdStartTime = float.PositiveInfinity;
                     activeController?.SetDialogueBoxState(true);
-                    lastBoundTransform = activeController.transform;
+                    lastBoundTransform = activeController.boundPosition;
+                    activeController.movementX = 0;
+                    activeController.isJumpInput = false;
                     activeController = null;
                     holdButtonImage.fillAmount = 0f;
                     transform.position += Vector3.up * 2f;
@@ -97,10 +102,11 @@ public class ControlManager : MonoBehaviour
             if (collider != null)
             {
                 collider.isTrigger = false;
+                playerImg.enabled = true;
             }
             isRoleChangeMode = true;
             lineRenderer.enabled = true;
-            lineRenderer.SetPositions(new Vector3[] { transform.position, lastBoundTransform.position });
+            lineRenderer.SetPositions(new Vector3[] { transform.position + Vector3.down * 0.5f, lastBoundTransform.position });
             float distance = Vector3.Distance(transform.position, lastBoundTransform.position);
             if (distance >= maximumDistanceFromLastTransform)
             {
