@@ -213,6 +213,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4313313524619590910, guid: b081bb22ad845f94d9e0289f0c324375, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7fdbcbc1b019c0b46a52d7cf68cb9c0e, type: 3}
     - target: {fileID: 4933448887174382181, guid: b081bb22ad845f94d9e0289f0c324375, type: 3}
       propertyPath: objectToAdd
       value: Balik

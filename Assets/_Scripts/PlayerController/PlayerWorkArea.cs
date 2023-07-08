@@ -8,7 +8,7 @@ public class PlayerWorkArea : MonoBehaviour
     [SerializeField] private string allowedNPCName = "Kedi";
     [SerializeField] private string objectToAdd = "Elma";
     [SerializeField] private int maximumObjectCount = 1;
-    [SerializeField] private Image requestedNPCImg;
+    [SerializeField] private CanvasGroup requestedNPCImg;
     [SerializeField] private Image onAreaInteractableImage;
     [SerializeField] private float interactableButtonDuration = 0.5f;
     [SerializeField] private Ease interactableButtonEase = Ease.OutCubic;
@@ -35,8 +35,8 @@ public class PlayerWorkArea : MonoBehaviour
         {
             if (maximumObjectCount <= 0)
             {
-                emptyImage.DOFade(1f, emptyImageShowTime / 2f).SetEase(Ease.OutCubic).OnComplete(() =>
-                emptyImage.DOFade(0f, emptyImageShowTime / 2f).SetEase(Ease.OutCubic));
+                //emptyImage.DOFade(1f, emptyImageShowTime / 2f).SetEase(Ease.OutCubic).OnComplete(() =>
+                //emptyImage.DOFade(0f, emptyImageShowTime / 2f).SetEase(Ease.OutCubic));
                 return;
             }
 

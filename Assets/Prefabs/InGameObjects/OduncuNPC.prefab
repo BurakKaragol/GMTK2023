@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 1602246500437211895, guid: 9ee362f82288d164cabf3d8a32ff747f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c7688698346b0cf4e8dae6e867d55979, type: 3}
     - target: {fileID: 2477689907764716099, guid: 9ee362f82288d164cabf3d8a32ff747f, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1.5
@@ -96,6 +100,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7763318490039080165, guid: 9ee362f82288d164cabf3d8a32ff747f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4f6e7ce98b849f4aa4210c24cf4ab43, type: 3}
     - target: {fileID: 8256146252406536403, guid: 9ee362f82288d164cabf3d8a32ff747f, type: 3}
       propertyPath: m_Size.x
       value: 0.62245446
