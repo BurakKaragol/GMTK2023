@@ -72,7 +72,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 81585850998194176
-    m_Localized: "M\xFCzik"
+    m_Localized: Ses
     m_Metadata:
       m_Items: []
   - m_Id: 81585849203032064
@@ -80,7 +80,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 81585847269457920
-    m_Localized: Genel
+    m_Localized: "Arkaplan M\xFCzi\u011Fi"
     m_Metadata:
       m_Items: []
   - m_Id: 81585844459274240
@@ -513,7 +513,11 @@ MonoBehaviour:
     m_Localized: "> EME\u011E\u0130 GE\xC7ENLER <\n\nMrLule - Burak Karag\xF6l\nOyun
       Geli\u015Ftiricisi\nYaz\u0131l\u0131mc\u0131\n\nPsygin - Sayg\u0131n Sarg\u0131n\nOyun
       Geli\u015Ftiricisi\nOyun Tasar\u0131mc\u0131s\u0131\n\n> OYUNDA KULLANILMI\u015E
-      OLAN ASSETLER <\n> Kenney <\nTilemap Garden\nTilemap Industrial\nTiles Package\n"
+      OLAN ASSETLER <\n> Kenney <\nPixel Platformer Farm Expansion\nPixel Platformer
+      Industrial Expansion\nPixel Platformer \nImpact Sounds\n\n> LYASeeK - Itch.io
+      <\nMini Folks Forest Animals\n\n> Free Game Assets - Itch.io <\nFree 3 Character
+      Sprite Pixel Art\n\n> Nicolae (Xelu) Berbece - Those Awesome Guys <\nKeyboard
+      And Controller Keys\n\n> GWriterStudio\r <\n8Bit Music"
     m_Metadata:
       m_Items: []
   - m_Id: 86110832029728768
@@ -651,6 +655,20 @@ MonoBehaviour:
       \xE7ekinmeyin.\r\n  Freelance i\u015Flere a\xE7\u0131\u011F\u0131m. Daha fazla
       bilgi i\xE7in l\xFCtfen a\u015Fa\u011F\u0131daki ba\u011Flant\u0131lardan benimle
       ileti\u015Fime ge\xE7in."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90620530175115264
+    m_Localized: "> Nas\u0131l Oynan\u0131r <\nWASD / Ok Tu\u015Flar\u0131 : Hareket
+      Etme\nBo\u015Fluk : Z\u0131pla\nF : Nesneyi Ver\nE (Bas\u0131l\u0131 Tut) :
+      Modu De\u011Fi\u015Ftir / NPC'ler ile etile\u015Fim"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90652554013310976
+    m_Localized: "Men\xFCye D\xF6n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90652624595058688
+    m_Localized: "Son\nOynad\u0131\u011F\u0131n\u0131z \u0130\xE7in Te\u015Fekk\xFCrler"
     m_Metadata:
       m_Items: []
   references:

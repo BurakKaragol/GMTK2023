@@ -1,33 +1,46 @@
 using System;
+using System.Runtime.CompilerServices;
 using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 namespace MrLule.Settings
 {
     public class LanguageSetting : SettingData<Locale>
     {
+        public LocalizationSettings localizationSettings;
+
         public override void ApplyChanges()
         {
             base.ApplyChanges();
+            localizationSettings.SetSelectedLocale(options[originalValueIndex]);
         }
 
         public override Locale GetOptionType(int index)
         {
-            throw new System.NotImplementedException();
+            return options[index];
         }
 
         public override void InitializeOptions()
         {
-            throw new NotImplementedException();
+            options = LocalizationSettings.AvailableLocales.Locales.ToArray();
+            for (int i = 0; i < options.Length; i++)
+            {
+                if (options[i].LocaleName == strings[i])
+                {
+                    originalValueIndex = selectedValueIndex = i;
+                    break;
+                }
+            }
+            localizationSettings.SetSelectedLocale(options[originalValueIndex]);
         }
 
-        public override void SetOption(int index)
+        protected override void LoadFromPlayerPrefs()
         {
-            base.SetOption(index);
-        }
-
-        protected override void InitializeVisuals()
-        {
-            base.InitializeVisuals();
+            base.LoadFromPlayerPrefs();
+            if (originalValueIndex == -1)
+            {
+                originalValue = selectedValue = LocalizationSettings.AvailableLocales.Locales.ToArray()[1];
+            }
         }
     }
 }

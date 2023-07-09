@@ -296,13 +296,13 @@ namespace MrLule.Systems.GridSystem
                         {
                             Hex<DataType> hex = new Hex<DataType>(is2D, transform.position + new Vector3(3 * x * (cellSize + verticalCellSpacing), y * (cellSize * Mathf.Sqrt(3) / 2 + horizontalCellSpacing), 0), cellSize);
                             hex.Draw(drawColor);
-                            Debugger.DrawString($"{x} {y}", hex.GetMiddlePoint(), drawColor);
+                            //Debugger.DrawString($"{x} {y}", hex.GetMiddlePoint(), drawColor);
                         }
                         else
                         {
                             Hex<DataType> hex = new Hex<DataType>(is2D, transform.position + new Vector3(3 * x * (cellSize + verticalCellSpacing), 0, y * (cellSize * Mathf.Sqrt(3) / 2 + horizontalCellSpacing)), cellSize);
                             hex.Draw(drawColor);
-                            Debugger.DrawString($"{x} {y}", hex.GetMiddlePoint(), drawColor);
+                            //Debugger.DrawString($"{x} {y}", hex.GetMiddlePoint(), drawColor);
                         }
                     }
                     else
@@ -311,13 +311,13 @@ namespace MrLule.Systems.GridSystem
                         {
                             Hex<DataType> hex = new Hex<DataType>(is2D, transform.position + new Vector3(3 * x * (cellSize + verticalCellSpacing) + (1.5f * (cellSize + verticalCellSpacing)), y * (cellSize * Mathf.Sqrt(3) / 2 + horizontalCellSpacing), 0), cellSize);
                             hex.Draw(drawColor);
-                            Debugger.DrawString($"{x} {y}", hex.GetMiddlePoint(), drawColor);
+                            //Debugger.DrawString($"{x} {y}", hex.GetMiddlePoint(), drawColor);
                         }
                         else
                         {
                             Hex<DataType> hex = new Hex<DataType>(is2D, transform.position + new Vector3(3 * x * (cellSize + verticalCellSpacing) + (1.5f * (cellSize + verticalCellSpacing)), 0, y * (cellSize * Mathf.Sqrt(3) / 2 + horizontalCellSpacing)), cellSize);
                             hex.Draw(drawColor);
-                            Debugger.DrawString($"{x} {y}", hex.GetMiddlePoint(), drawColor);
+                            //Debugger.DrawString($"{x} {y}", hex.GetMiddlePoint(), drawColor);
                         }
                     }
                 }

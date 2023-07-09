@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6820360857524063307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8875305837378012504}
+  - component: {fileID: 324679901465035794}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8875305837378012504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6820360857524063307}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &324679901465035794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6820360857524063307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9496a9108027484aaeed7a2965fbad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: background
+    clip: {fileID: 8300000, guid: 06906d718be5b6a4cb2df8732bf39832, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    isPlaying: 0
+    isPaused: 0
+    source: {fileID: 0}
+  - name: Footstep1
+    clip: {fileID: 8300000, guid: 844bd42bf2b07bd429c992d065d38d29, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    isPlaying: 0
+    isPaused: 0
+    source: {fileID: 0}
+  - name: Footstep2
+    clip: {fileID: 8300000, guid: bc0086649865a7d4197eafb8e247bcb0, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    isPlaying: 0
+    isPaused: 0
+    source: {fileID: 0}
+  - name: Footstep3
+    clip: {fileID: 8300000, guid: b0bf6f629a71e274b9f80f46d199ab26, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    isPlaying: 0
+    isPaused: 0
+    source: {fileID: 0}
+  - name: Footstep4
+    clip: {fileID: 8300000, guid: e768d081d1b974647bcfea9d1b9a3d7d, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    isPlaying: 0
+    isPaused: 0
+    source: {fileID: 0}
+  - name: Button
+    clip: {fileID: 8300000, guid: ec7c98e3892918a40a7dbaade2b70d85, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    isPlaying: 0
+    isPaused: 0
+    source: {fileID: 0}
+  - name: CompleteJob
+    clip: {fileID: 8300000, guid: b657875f979cb4c4d9805658fbe941cf, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    isPlaying: 0
+    isPaused: 0
+    source: {fileID: 0}
+  background: background
+  general: volume
+  music: bgVolume

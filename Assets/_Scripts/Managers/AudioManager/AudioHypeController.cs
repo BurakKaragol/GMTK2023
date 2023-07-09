@@ -60,8 +60,8 @@ namespace MrLule.Managers.AudioMan
             audioManager = AudioManager.Instance;
             if (audioManager != null)
             {
-                generalVolume = audioManager.masterVolume;
-                musicVolume = audioManager.musicVolume;
+                generalVolume = 0.5f;
+                musicVolume = 0.5f;
             }
             CreateAudioSources();
             StartPlaying();
@@ -152,8 +152,8 @@ namespace MrLule.Managers.AudioMan
             {
                 audioManager = AudioManager.Instance;
             }
-            generalVolume = audioManager.masterVolume;
-            musicVolume = audioManager.musicVolume;
+            generalVolume = 0.5f;
+            musicVolume = 0.5f;
             foreach (var audio in audios)
             {
                 audio.source.volume = audio.volume * audio.volumeCurve.Evaluate(hype) * generalVolume * musicVolume;

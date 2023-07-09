@@ -80,7 +80,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 81585847269457920
-    m_Localized: General
+    m_Localized: Background Music
     m_Metadata:
       m_Items: []
   - m_Id: 81585849203032064
@@ -88,7 +88,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 81585850998194176
-    m_Localized: Music
+    m_Localized: Sound
     m_Metadata:
       m_Items: []
   - m_Id: 81585851463761920
@@ -501,7 +501,11 @@ MonoBehaviour:
   - m_Id: 85747226326990848
     m_Localized: "> CONTRIBUTORS <\n\nMrLule - Burak Karag\xF6l\nGame Developer\nProgrammer\n\nPsygin
       - Sayg\u0131n Sarg\u0131n\nGame Developer\nGame Designer\n\n> ASSETS USED IN
-      THE GAME <\n> Kenney <\nTilemap Garden\nTilemap Industrial\nTiles Package\n"
+      THE GAME <\n> Kenney <\nPixel Platformer Farm Expansion\nPixel Platformer Industrial
+      Expansion\nPixel Platformer \nImpact Sounds\n\n> LYASeeK - Itch.io <\nMini
+      Folks Forest Animals\n\n> Free Game Assets - Itch.io <\nFree 3 Character Sprite
+      Pixel Art\n\n> Nicolae (Xelu) Berbece - Those Awesome Guys <\nKeyboard And
+      Controller Keys\n\n> GWriterStudio <\n8Bit Music"
     m_Metadata:
       m_Items: []
   - m_Id: 86110832029728768
@@ -637,6 +641,30 @@ MonoBehaviour:
       want to take a look at the other games i made. Feel free to take a look at
       my itch.io page.\n  I am open to freelance jobs. For more info please contact
       me from the links below."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90620530175115264
+    m_Localized: '> How To Play <
+
+      WASD / Arrow Keys : Move
+
+      Space :
+      Jump
+
+      F : Give Item
+
+      E (Hold Down) : Change Mode / Interact With
+      NPC''s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90652554013310976
+    m_Localized: Return To Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90652624595058688
+    m_Localized: 'The End
+
+      Thanks For Playing'
     m_Metadata:
       m_Items: []
   references:

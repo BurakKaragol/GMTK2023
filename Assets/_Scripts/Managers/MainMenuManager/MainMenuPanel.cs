@@ -103,7 +103,7 @@ public class MainMenuPanel : MonoBehaviour
         {
             return;
         }
-        DrawGizmos();
+        //DrawGizmos();
     }
 
     private void OnDrawGizmosSelected()
@@ -112,65 +112,65 @@ public class MainMenuPanel : MonoBehaviour
         {
             return;
         }
-        DrawGizmos();
+        //DrawGizmos();
     }
 
-    private void DrawGizmos()
-    {
-        float multiplier = 1.25f;
-        Rect rect = GetComponent<RectTransform>().rect;
-        if (startPosition == Vector3.zero)
-        {
-            if (showOnStart)
-            {
-                Debugger.DrawArrow(transform.position - targetPosition, transform.position, Color.blue);
-                Gizmos.color = Color.red;
-                Debugger.DrawRectangle(transform.position - targetPosition, startScale * rect.size, startRotation);
-                Debugger.DrawString($"{gameObject.name} Hide Position\n" +
-                    $"Alpha: {startFadeAmount}",
-                    transform.position - targetPosition + Vector3.down * Screen.height * multiplier, Gizmos.color);
-                Gizmos.color = Color.green;
-                Debugger.DrawRectangle(transform.position, targetScale * rect.size, startRotation + targetRotation);
-                Debugger.DrawString($"{gameObject.name} Show Position\n" +
-                    $"Alpha: {startFadeAmount}",
-                    transform.position + Vector3.down * Screen.height * multiplier, Gizmos.color);
-            }
-            else
-            {
-                Debugger.DrawArrow(transform.position, transform.position + targetPosition, Color.blue);
-                Gizmos.color = Color.red;
-                Debugger.DrawRectangle(transform.position, startScale * rect.size, startRotation);
-                Debugger.DrawString($"{gameObject.name} Hide Position\n" +
-                    $"Alpha: {startFadeAmount}",
-                    transform.position + Vector3.down * Screen.height * multiplier, Gizmos.color);
-                Gizmos.color = Color.green;
-                Debugger.DrawRectangle(transform.position + targetPosition, targetScale * rect.size, startRotation + targetRotation);
-                Debugger.DrawString($"{gameObject.name} Show Position\n" +
-                    $"Alpha: {startFadeAmount}",
-                    transform.position + targetPosition + Vector3.down * Screen.height * multiplier, Gizmos.color);
-            }
-        }
-        else
-        {
-            if (isShowing)
-            {
-                Debugger.DrawArrow(startPosition, startPosition + targetPosition, Color.blue);
-            }
-            else
-            {
-                Debugger.DrawArrow(startPosition + targetPosition, startPosition, Color.blue);
-            }
-            Gizmos.color = Color.red;
-            Debugger.DrawRectangle(startPosition, startScale * rect.size, startRotation);
-            Debugger.DrawString($"{gameObject.name} Hide Position\n" +
-                $"Alpha: {startFadeAmount}",
-                startPosition + Vector3.down * Screen.height * multiplier, Gizmos.color);
-            Gizmos.color = Color.green;
-            Debugger.DrawRectangle(startPosition + targetPosition, targetScale * rect.size, startRotation + targetRotation);
-            Debugger.DrawString($"{gameObject.name} Show Position\n" +
-                $"Alpha: {startFadeAmount}",
-                startPosition + targetPosition + Vector3.down * Screen.height * multiplier, Gizmos.color);
-        }
-        Gizmos.color = Color.white;
-    }
+    //private void DrawGizmos()
+    //{
+    //    float multiplier = 1.25f;
+    //    Rect rect = GetComponent<RectTransform>().rect;
+    //    if (startPosition == Vector3.zero)
+    //    {
+    //        if (showOnStart)
+    //        {
+    //            Debugger.DrawArrow(transform.position - targetPosition, transform.position, Color.blue);
+    //            Gizmos.color = Color.red;
+    //            Debugger.DrawRectangle(transform.position - targetPosition, startScale * rect.size, startRotation);
+    //            Debugger.DrawString($"{gameObject.name} Hide Position\n" +
+    //                $"Alpha: {startFadeAmount}",
+    //                transform.position - targetPosition + Vector3.down * Screen.height * multiplier, Gizmos.color);
+    //            Gizmos.color = Color.green;
+    //            Debugger.DrawRectangle(transform.position, targetScale * rect.size, startRotation + targetRotation);
+    //            Debugger.DrawString($"{gameObject.name} Show Position\n" +
+    //                $"Alpha: {startFadeAmount}",
+    //                transform.position + Vector3.down * Screen.height * multiplier, Gizmos.color);
+    //        }
+    //        else
+    //        {
+    //            Debugger.DrawArrow(transform.position, transform.position + targetPosition, Color.blue);
+    //            Gizmos.color = Color.red;
+    //            Debugger.DrawRectangle(transform.position, startScale * rect.size, startRotation);
+    //            Debugger.DrawString($"{gameObject.name} Hide Position\n" +
+    //                $"Alpha: {startFadeAmount}",
+    //                transform.position + Vector3.down * Screen.height * multiplier, Gizmos.color);
+    //            Gizmos.color = Color.green;
+    //            Debugger.DrawRectangle(transform.position + targetPosition, targetScale * rect.size, startRotation + targetRotation);
+    //            Debugger.DrawString($"{gameObject.name} Show Position\n" +
+    //                $"Alpha: {startFadeAmount}",
+    //                transform.position + targetPosition + Vector3.down * Screen.height * multiplier, Gizmos.color);
+    //        }
+    //    }
+    //    else
+    //    {
+    //        if (isShowing)
+    //        {
+    //            Debugger.DrawArrow(startPosition, startPosition + targetPosition, Color.blue);
+    //        }
+    //        else
+    //        {
+    //            Debugger.DrawArrow(startPosition + targetPosition, startPosition, Color.blue);
+    //        }
+    //        Gizmos.color = Color.red;
+    //        Debugger.DrawRectangle(startPosition, startScale * rect.size, startRotation);
+    //        Debugger.DrawString($"{gameObject.name} Hide Position\n" +
+    //            $"Alpha: {startFadeAmount}",
+    //            startPosition + Vector3.down * Screen.height * multiplier, Gizmos.color);
+    //        Gizmos.color = Color.green;
+    //        Debugger.DrawRectangle(startPosition + targetPosition, targetScale * rect.size, startRotation + targetRotation);
+    //        Debugger.DrawString($"{gameObject.name} Show Position\n" +
+    //            $"Alpha: {startFadeAmount}",
+    //            startPosition + targetPosition + Vector3.down * Screen.height * multiplier, Gizmos.color);
+    //    }
+    //    Gizmos.color = Color.white;
+    //}
 }

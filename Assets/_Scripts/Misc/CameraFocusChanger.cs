@@ -9,9 +9,15 @@ public class CameraFocusChanger : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera vcam;
     [SerializeField] private Transform max;
     [SerializeField] private float maximum = 5f;
+    [SerializeField] private float minimum = 0f;
     private CinemachineFramingTransposer framingTransposer;
     private bool playerOnArea = false;
     private Transform player;
+
+    public void DisableArea()
+    {
+        this.enabled = false;
+    }
 
     private void Start()
     {
@@ -23,7 +29,7 @@ public class CameraFocusChanger : MonoBehaviour
         if (playerOnArea)
         {
             float value = Mathf.Abs(max.position.x - player.position.x) / maximum;
-            framingTransposer.m_ScreenX = Mathf.Lerp(0, 0.5f, value);
+            framingTransposer.m_ScreenX = Mathf.Lerp(minimum, 0.5f, value);
         }
         else
         {

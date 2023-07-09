@@ -124,6 +124,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5636576066489100409, guid: 9ee362f82288d164cabf3d8a32ff747f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3eeb058239659934996a50d5a375d04d, type: 2}
     - target: {fileID: 5962634699441241516, guid: 9ee362f82288d164cabf3d8a32ff747f, type: 3}
       propertyPath: dialogueBoxMoveUpAmount
       value: 1.25

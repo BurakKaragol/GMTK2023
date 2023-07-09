@@ -1,6 +1,7 @@
 using MrLule.Attributes;
 using MrLule.ExtensionMethods;
 using MrLule.General;
+using MrLule.Managers.AudioMan;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -39,12 +40,17 @@ public class Controller : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-
+    bool tillki = false;
     private void FixedUpdate()
     {
         if (!isRequirementSatisfied)
         {
             return;
+        }
+        if (NPCName == "Tilki" && !tillki)
+        {
+            FindObjectOfType<CameraFocusChanger>().DisableArea();
+            tillki = true;
         }
 
         rb.velocity = new Vector2(movementX * movementSpeed * Time.fixedDeltaTime, rb.velocity.y);
@@ -107,6 +113,11 @@ public class Controller : MonoBehaviour
             npcShowDialogue.HideDialogueBox();
             npcShowDialogue.enabled = false;
         }
+    }
+
+    public void PlayFootstep(string audioName)
+    {
+        AudioManager.Instance.Play(audioName);
     }
 
     private void CheckGround()

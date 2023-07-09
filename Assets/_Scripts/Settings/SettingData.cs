@@ -2,11 +2,9 @@ using MrLule.Attributes;
 using MrLule.ExtensionMethods;
 using MrLule.Managers.PlayerPrefsMan;
 using TMPro;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Localization;
-using UnityEngine.Localization.SmartFormat.GlobalVariables;
 using UnityEngine.UI;
 
 namespace MrLule.Settings
@@ -109,6 +107,7 @@ namespace MrLule.Settings
             selectedValue = GetOptionType(index);
             hasChanged = selectedValueIndex != originalValueIndex;
             InitializeVisuals();
+            ApplyChanges();
         }
 
         public virtual Type GetOptionType(int index)
@@ -168,7 +167,7 @@ namespace MrLule.Settings
             {
                 optionText.SetText(strings[selectedValueIndex]);
             }
-            changedVisual.color = hasChanged ? normalColor : disabledColor;
+            //changedVisual.color = hasChanged ? normalColor : disabledColor;
             InitializeButtons();
         }
 

@@ -80,19 +80,19 @@ namespace MrLule.UI
             isShowing = false;
         }
 
-        private void OnDrawGizmos()
-        {
-            Rect rect = GetComponent<RectTransform>().rect;
-            Gizmos.color = Color.white;
-            Gizmos.DrawLine(transform.position, transform.position + targetPosition);
-            if (Selection.activeGameObject == gameObject)
-            {
-                Gizmos.color = Color.red;
-                Debugger.DrawRectangle(transform.position, transform.localScale * rect.size, transform.rotation.eulerAngles);
-                Gizmos.color = Color.green;
-                Debugger.DrawRectangle(transform.position + targetPosition, targetScale * rect.size, transform.rotation.eulerAngles + targetRotation);
-            }
-            Gizmos.color = Color.white;
-        }
+        //private void OnDrawGizmos()
+        //{
+        //    Rect rect = GetComponent<RectTransform>().rect;
+        //    Gizmos.color = Color.white;
+        //    Gizmos.DrawLine(transform.position, transform.position + targetPosition);
+        //    if (Selection.activeGameObject == gameObject)
+        //    {
+        //        Gizmos.color = Color.red;
+        //        Debugger.DrawRectangle(transform.position, transform.localScale * rect.size, transform.rotation.eulerAngles);
+        //        Gizmos.color = Color.green;
+        //        Debugger.DrawRectangle(transform.position + targetPosition, targetScale * rect.size, transform.rotation.eulerAngles + targetRotation);
+        //    }
+        //    Gizmos.color = Color.white;
+        //}
     }
 }

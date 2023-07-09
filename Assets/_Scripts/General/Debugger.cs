@@ -107,6 +107,7 @@ namespace MrLule.General
         #endregion
 
         #region Drawing
+#if UNITY_EDITOR
         /// <summary>
         /// REWORK
         /// </summary>
@@ -145,6 +146,7 @@ namespace MrLule.General
             GUI.contentColor = defaultColor;
             UnityEditor.Handles.EndGUI();
         }
+#endif
 
         public static void DrawLine(Vector3 start, Vector3 end, Color? color = null, float duration = float.PositiveInfinity, bool depthTest = true)
         {

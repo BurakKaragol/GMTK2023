@@ -104,6 +104,10 @@ PrefabInstance:
       propertyPath: requestedItemName
       value: Odun
       objectReference: {fileID: 0}
+    - target: {fileID: 5636576066489100409, guid: 9ee362f82288d164cabf3d8a32ff747f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6619e47928760b144a71d3938703a39b, type: 2}
     - target: {fileID: 5962634699441241516, guid: 9ee362f82288d164cabf3d8a32ff747f, type: 3}
       propertyPath: dialogueBoxMoveUpAmount
       value: 1.25

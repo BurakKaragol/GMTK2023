@@ -69,7 +69,10 @@ namespace MrLule.Managers.SceneTransitionMan
                     asyncOperation = SceneManager.LoadSceneAsync(sceneToLoad);
                     asyncOperation.allowSceneActivation = false;
                     loadingSceneSystem = FindObjectOfType<LoadingSceneSystem>();
-                    StartCoroutine(TrackLoadingProgress());
+                    if (loadingSceneSystem)
+                    {
+                        StartCoroutine(TrackLoadingProgress());
+                    }
                 }
             }
         }

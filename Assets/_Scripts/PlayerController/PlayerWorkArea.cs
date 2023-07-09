@@ -1,4 +1,5 @@
 using DG.Tweening;
+using MrLule.Managers.AudioMan;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -47,6 +48,7 @@ public class PlayerWorkArea : MonoBehaviour
                     holdingKey = false;
                     fillImage.fillAmount = 0f;
                     player.AddObjectToInventory(objectToAdd);
+                    AudioManager.Instance.Play("CompleteJob");
                     maximumObjectCount--;
                     player.isWorking = false;
                 }

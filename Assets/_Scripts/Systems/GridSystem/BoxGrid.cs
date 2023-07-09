@@ -225,13 +225,13 @@ namespace MrLule.Systems.GridSystem
                     {
                         Box<DataType> box = new Box<DataType>(is2D, transform.position + new Vector3(x * (cellSize.x + verticalCellSpacing), y * (cellSize.y + horizontalCellSpacing), 0), cellSize);
                         box.Draw(drawColor);
-                        Debugger.DrawString($"{x} {y}", box.GetMiddlePoint(), drawColor);
+                        //Debugger.DrawString($"{x} {y}", box.GetMiddlePoint(), drawColor);
                     }
                     else
                     {
                         Box<DataType> box = new Box<DataType>(is2D, transform.position + new Vector3(x * (cellSize.x + verticalCellSpacing), 0, y * (cellSize.y + horizontalCellSpacing)), cellSize);
                         box.Draw(drawColor);
-                        Debugger.DrawString($"{x} {y}", box.GetMiddlePoint(), drawColor);
+                        //Debugger.DrawString($"{x} {y}", box.GetMiddlePoint(), drawColor);
                     }
                 }
             }
