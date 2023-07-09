@@ -73,6 +73,31 @@ public class ControlManager : MonoBehaviour
                 return;
             }
 
+            CheckControllable();
+            if (!hasControlableInArea)
+            {
+                holdingGhost = false;
+                return;
+            }
+            if (playerInWorkArea)
+            {
+                return;
+            }
+
+            if (Input.GetKeyDown(KeyCode.F) && !controllableInArea.isRequirementSatisfied)
+            {
+                if (HasObjectInInventory(controllableInArea.requestedItemName))
+                {
+                    RemoveOPbjectFromInventory(controllableInArea.requestedItemName);
+                    controllableInArea.CompleteRequirement();
+                }
+                else
+                {
+                    notOnInventoryImage.DOFade(1f, notOnInventoryShowTime / 2f).SetEase(Ease.OutCubic).OnComplete(() =>
+                    notOnInventoryImage.DOFade(0f, notOnInventoryShowTime / 2f).SetEase(Ease.OutCubic));
+                }
+            }
+
             if (Input.GetKeyDown(KeyCode.E))
             {
                 holdStartTime = Time.time;
@@ -202,16 +227,43 @@ public class ControlManager : MonoBehaviour
 
     private void CheckControllable()
     {
-        Collider2D hitCollider = Physics2D.OverlapCircle(transform.position, roleChangeDetectionDistance, whatIsChangeable);
-        if (hitCollider != null)
+        if (isRoleChangeMode)
         {
-            hasControlableInArea = true;
-            controllableInArea = hitCollider.GetComponent<Controller>();
+            Collider2D hitCollider = Physics2D.OverlapCircle(transform.position, roleChangeDetectionDistance, whatIsChangeable);
+            if (hitCollider != null)
+            {
+                hasControlableInArea = true;
+                controllableInArea = hitCollider.GetComponent<Controller>();
+            }
+            else
+            {
+                hasControlableInArea = false;
+                controllableInArea = null;
+            }
         }
         else
         {
-            hasControlableInArea = false;
-            controllableInArea = null;
+            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, roleChangeDetectionDistance, whatIsChangeable);
+            if (hitColliders.Length != 0)
+            {
+                hasControlableInArea = true;
+                foreach (Collider2D hit in hitColliders)
+                {
+                    if (hit == activeController.GetComponent<Collider2D>())
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        controllableInArea = hit.GetComponent<Controller>();
+                    }
+                }
+            }
+            else
+            {
+                hasControlableInArea = false;
+                controllableInArea = null;
+            }
         }
     }
 

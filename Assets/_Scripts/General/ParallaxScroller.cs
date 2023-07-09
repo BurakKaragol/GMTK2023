@@ -23,7 +23,7 @@ namespace MrLule.General
             lengthY = GetComponentInChildren<SpriteRenderer>().bounds.size.y;
         }
 
-        void FixedUpdate()
+        void Update()
         {
             float tempX = (cam.position.x * (1 - parallaxEffect.x));
             float tempY = (cam.position.y * (1 - parallaxEffect.y));

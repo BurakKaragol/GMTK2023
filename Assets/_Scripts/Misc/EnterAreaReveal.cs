@@ -16,6 +16,7 @@ public class enterAreaReveal : MonoBehaviour
     private void Start()
     {
         tilemap = GetComponent<Tilemap>();
+        tilemap.color = new Color(1f, 1f, 1f, hideValue);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

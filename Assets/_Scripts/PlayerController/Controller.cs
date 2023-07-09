@@ -36,7 +36,7 @@ public class Controller : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
 
@@ -47,19 +47,22 @@ public class Controller : MonoBehaviour
             return;
         }
 
-        rb.AddForce(new Vector2(movementX * movementSpeed * Time.fixedDeltaTime, 0));
+        rb.velocity = new Vector2(movementX * movementSpeed * Time.fixedDeltaTime, rb.velocity.y);
+        animator.SetBool("isRunning", rb.velocity.x != 0);
+        animator.SetFloat("verticalVelocity", rb.velocity.y);
         if (isFacingRight && rb.velocity.x < 0)
         {
             isFacingRight = false;
-            transform.localScale = Vector3.one.SetX(-1);
+            transform.localScale = (Vector3.one * 1.3f).SetX(-1.3f);
         }
         else if (!isFacingRight && rb.velocity.x > 0)
         {
             isFacingRight = true;
-            transform.localScale = Vector3.one;
+            transform.localScale = Vector3.one * 1.3f;
         }
 
         CheckGround();
+        animator.SetBool("isGrounded", isGrounded);
         if (isJumpInput)
         {
             if (jumped)
@@ -69,7 +72,7 @@ public class Controller : MonoBehaviour
             jumped = true;
             jumpTime = Time.time;
             rb.gravityScale = jumpGravity;
-            rb.AddForce(Vector2.up * jumpForce);
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
         else
         {
